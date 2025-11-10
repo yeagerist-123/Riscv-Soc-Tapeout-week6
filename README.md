@@ -215,16 +215,17 @@ exit
 
 Screenshots of running each commands
 
-![1](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d19f6d0f-16f8-4e79-aa5a-f2a34b9fb203)
-![2](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5e03c8ca-8c7f-4579-a7bc-10161007910e)
-![3](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5f196a31-059e-4192-a208-8a15ba1a0dd7)
+<img width="1920" height="923" alt="w-6-2" src="https://github.com/user-attachments/assets/c9009483-03ab-4376-aa11-9104b06d3458" />
+<img width="1920" height="923" alt="w-6-3" src="https://github.com/user-attachments/assets/68cee42a-f642-433e-bfa9-c07b881903c1" />
+
+
 
 #### 2. Calculate the flop ratio.
 
 Screenshots of synthesis statistics report file with required values highlighted
 
-![Screenshot from 2024-03-15 22-02-42](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9280fefc-80b2-44ef-af34-ef3bddd3c14e)
-![Screenshot from 2024-03-15 22-03-39](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/3275f46c-19d7-42c5-8984-96d455f6e09b)
+<img width="1920" height="923" alt="w-6diearea" src="https://github.com/user-attachments/assets/f4ac74fd-1312-435f-8405-52d165b50fdf" />
+
 
 Calculation of Flop Ratio and DFF % from synthesis statistics report file
 
@@ -251,10 +252,6 @@ Section 2 tasks:-
 ```math
 Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
 ```
-
-* All section 2 logs, reports and results can be found in following run folder:
-
-[Section 2 Run - 17-03_12-06](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06)
 
 #### 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
 
@@ -287,14 +284,15 @@ run_floorplan
 
 Screenshot of floorplan run
 
-![Screenshot from 2024-03-17 18-06-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7deda325-2ae8-4e98-aa71-7a54f5c34fcb)
-![Screenshot from 2024-03-17 18-06-36](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c1fe538f-c58f-46b9-9466-b0873a88eb6c)
+<img width="1920" height="1080" alt="w6-fp1" src="https://github.com/user-attachments/assets/72e7a3d0-7920-4b2a-8c53-c11f6ac847bb" />
+<img width="1920" height="1080" alt="w6-fp2" src="https://github.com/user-attachments/assets/e12d9068-97c8-4b56-acac-f747f266f609" />
+
 
 #### 2. Calculate the die area in microns from the values in floorplan def.
 
 Screenshot of contents of floorplan def
 
-![Screenshot from 2024-03-17 18-34-53](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9a0baa93-7db6-4148-b155-49b18c130522)
+<img width="1920" height="923" alt="w-6-fp3" src="https://github.com/user-attachments/assets/506668c2-d6ff-444c-bf74-a3cd6961a99e" />
 
 According to floorplan def
 ```math
@@ -333,28 +331,23 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of floorplan def in magic
 
-![Screenshot from 2024-03-17 18-05-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/93af15d9-ba65-49d4-8e98-ad1d0c4b0097)
+<img width="1920" height="923" alt="mlayout" src="https://github.com/user-attachments/assets/e9778e33-6cd5-4454-8dea-45d2952a8660" />
+
 
 Equidistant placement of ports
 
-![Screenshot from 2024-03-17 18-14-28](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6183e357-315c-40df-9bc3-e7993d76b19c)
+<img width="1920" height="923" alt="mla2" src="https://github.com/user-attachments/assets/b9262770-e710-4cd3-94ee-d3a916dfde02" />
 
-Port layer as set through config.tcl
-
-![Screenshot from 2024-03-17 18-17-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/4e35528c-1bb1-4eaa-84be-14a95e532b75)
-![Screenshot from 2024-03-17 18-19-50](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a88afbbd-6d63-4ce5-a1ec-620dd8c37f45)
-
-Decap Cells and Tap Cells
-
-![Screenshot from 2024-03-17 18-22-57](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c1714ed1-7cdd-4b3c-8e0b-e4f97270ef82)
 
 Diogonally equidistant Tap cells
 
-![Screenshot from 2024-03-17 18-25-28](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6f62f639-81cc-4e5d-8b5c-ea5b209125ba)
+<img width="1920" height="923" alt="w6 magic diagnol" src="https://github.com/user-attachments/assets/4c833b2a-f111-4c93-adf8-d1072bda6f21" />
+
 
 Unplaced standard cells at the origin
 
-![Screenshot from 2024-03-17 18-31-41](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/f875937c-cec4-4c2c-8c4b-6808d81821d6)
+<img width="1920" height="923" alt="w6magic stdcell" src="https://github.com/user-attachments/assets/4b25748f-8dae-4a1d-864e-1831ecf2171d" />
+
 
 #### 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 
@@ -367,8 +360,9 @@ run_placement
 
 Screenshots of placement run
 
-![Screenshot from 2024-03-17 22-44-17](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/3ddaf32e-fdbb-4410-bfe6-7ea6b2640438)
-![Screenshot from 2024-03-17 22-46-27](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e6b36b9b-b9bc-4390-84fd-a10d23e2246f)
+<img width="1920" height="923" alt="w6-pl1" src="https://github.com/user-attachments/assets/0bebe69f-5cb9-4a1d-9d89-999fe4945c26" />
+<img width="1920" height="923" alt="w6-pl2" src="https://github.com/user-attachments/assets/a7ffb05e-6ce8-46c0-84c5-16599fce90a7" />
+
 
 #### 5. Load generated placement def in magic tool and explore the placement.
 
@@ -383,12 +377,13 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 
 Screenshots of floorplan def in magic
+<img width="1920" height="923" alt="w6-pl3" src="https://github.com/user-attachments/assets/d0ba4d26-ac77-4cfc-927b-4af93f814b8d" />
 
-![Screenshot from 2024-03-17 22-58-44](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e703ef0b-3968-4132-a9c7-05b53f50b214)
 
 Standard cells legally placed 
 
-![Screenshot from 2024-03-17 23-04-20](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/54911138-f942-48b9-b4e9-61d741a4b5ac)
+<img width="1920" height="923" alt="w6-pl4" src="https://github.com/user-attachments/assets/3953c271-2117-4953-925c-ba69552fe986" />
+
 
 Commands to exit from current run
 
