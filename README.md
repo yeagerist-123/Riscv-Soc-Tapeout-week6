@@ -405,7 +405,8 @@ prep -design picorv32a
 ```
 > This merges configuration files and prepares the design for synthesis. Check if a merged file was created successfully.
 
-<img width="1851" height="935" alt="image" src="https://github.com/user-attachments/assets/8b767f8e-e589-4067-a3ae-25f8b9314261" />
+<img width="1920" height="923" alt="w-6-1" src="https://github.com/user-attachments/assets/3ee902f8-8487-4b4e-95c4-6bb01aaf3d39" />
+
 
 Step 5: Review the `runs` Directory
 
