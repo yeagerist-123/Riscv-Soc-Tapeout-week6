@@ -397,7 +397,8 @@ package require openlane 0.9
 ```
 - Al the design files are in `openlane_working_dir/openlane/designs/picorv32a`
   
-<img width="1853" height="292" alt="image" src="https://github.com/user-attachments/assets/bc90c74b-1161-4b4f-a6a8-be7f056c2f3d" />
+<img width="1920" height="923" alt="w-6-1" src="https://github.com/user-attachments/assets/eccf0c1a-4923-43b6-8a3f-e7bbd421e0ce" />
+
 
 Step 4: Prepare the Design
 ```
@@ -405,7 +406,8 @@ prep -design picorv32a
 ```
 > This merges configuration files and prepares the design for synthesis. Check if a merged file was created successfully.
 
-<img width="1851" height="935" alt="image" src="https://github.com/user-attachments/assets/8b767f8e-e589-4067-a3ae-25f8b9314261" />
+<img width="1920" height="923" alt="w-6-2" src="https://github.com/user-attachments/assets/ea878668-226f-4b90-aa4a-3eb39fe4cc95" />
+
 
 Step 5: Review the `runs` Directory
 
@@ -428,7 +430,8 @@ Converts the RTL code into a gate-level netlist.
 ```
 run_synthesis
 ```
-<img width="1852" height="927" alt="image" src="https://github.com/user-attachments/assets/eb84fcc6-ac49-472b-8518-bbdbd971425f" />
+<img width="1920" height="923" alt="w-6-3" src="https://github.com/user-attachments/assets/03120ef5-bfe7-4540-979b-e1d78d6bdcd2" />
+
 
 Step 7: View Synthesis Statistics
 
@@ -728,12 +731,17 @@ To start the floorplanning process in OpenLANE, run the following command in int
 ```
 run_floorplan
 ```
+<img width="1920" height="1080" alt="w6-fp1" src="https://github.com/user-attachments/assets/38773d6a-8ce7-454a-93a0-54688e74b023" />
+<img width="1920" height="1080" alt="w6-fp2" src="https://github.com/user-attachments/assets/7aa5aead-2f1b-4a55-bf18-e8b3715ac52e" />
+
+
 The generated DEF (Design Exchange Format) file can be found in:
 ```
 /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/31-10_09-36/results/floorplan
 ```
 
-<img width="890" height="528" alt="image" src="https://github.com/user-attachments/assets/5070afd9-c02b-4923-8a5a-0ea93ea8947f" />
+<img width="1920" height="923" alt="w-6-fp3" src="https://github.com/user-attachments/assets/f97f94bd-14af-4899-b149-f61e50ec1bbb" />
+
 
 Required Files for Viewing in Magic
 To visualize the floorplan using the Magic layout tool, you’ll need the following three files:
@@ -755,7 +763,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 Once the floorplan is loaded in **Magic**, you can interact with and inspect different parts of the design using the following controls:
 
-<img width="716" height="682" alt="image" src="https://github.com/user-attachments/assets/84b19028-52f9-44bc-9319-d86c82bfd874" />
+<img width="1920" height="923" alt="mlayout" src="https://github.com/user-attachments/assets/525a2693-ed16-4f8d-87ba-923f43946a97" />
 
 ###  Basic Controls
 
@@ -773,9 +781,13 @@ Once the floorplan is loaded in **Magic**, you can interact with and inspect dif
 - Always ensure the design is **fully loaded** before interacting to avoid display errors.  
 - The **`what`** command is especially useful for checking **cell names, coordinates, and layer details**.
 
-<img width="1055" height="978" alt="image" src="https://github.com/user-attachments/assets/27dfbc1e-6520-4626-9048-a966ac22e696" />
+check equidistant pins:
+<img width="1920" height="923" alt="mla2" src="https://github.com/user-attachments/assets/a1bee816-ce71-4808-af04-89cc657cd284" />
+see the diagnol placement of celss inside:
+<img width="1920" height="923" alt="w6 magic diagnol" src="https://github.com/user-attachments/assets/a53013a0-2ff5-4b57-acb2-130cd91f8b19" />
+see the standard library:
+<img width="1920" height="923" alt="mla3" src="https://github.com/user-attachments/assets/d3ddec25-b482-4101-ab51-8e279e7e9a97" />
 
-  <img width="887" height="735" alt="2" src="https://github.com/user-attachments/assets/7ac36a5f-03d2-4898-9ea8-44a9dd305df3" />
 
 ## Placement
 
@@ -900,18 +912,21 @@ The **placement** process in OpenLANE is divided into two main stages:
 run_placement
 ```
 
-<img width="1856" height="927" alt="image" src="https://github.com/user-attachments/assets/acc2aff9-2da6-4924-bc1d-b3bdf8ab8e6e" />
+<img width="1920" height="923" alt="w6-pl1" src="https://github.com/user-attachments/assets/f18b9d55-9f00-40c7-b03e-92722f90a67f" />
+<img width="1920" height="923" alt="w6-pl2" src="https://github.com/user-attachments/assets/159917b0-6700-4ce5-8f48-a6dc5ba82e65" />
+
 
 ```
 cd /work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/31-10_09-36/results/placement
  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef  def read picorv32a.placement.def &
 ```
+<img width="1920" height="923" alt="w6-pl3" src="https://github.com/user-attachments/assets/0584b8d7-bef3-45d4-a5f4-fadd414f0c51" />
 
-<img width="716" height="791" alt="image" src="https://github.com/user-attachments/assets/97480932-a476-42e1-9f21-0b3b61b23d43" />
 
 - standard cells are overlaped
 
-<img width="1027" height="791" alt="image" src="https://github.com/user-attachments/assets/d69ac2cb-6685-4d60-bee5-062441ad47b5" />
+<img width="1920" height="923" alt="w6-pl4" src="https://github.com/user-attachments/assets/59ccfeeb-5397-4b6b-bb00-6e642c805caf" />
+
 
 ## Standard Cell Design
 
@@ -1106,7 +1121,7 @@ Use the following command to open the CMOS inverter layout (sky130_inv.mag) in M
 magic -T sky130A.tech sky130_inv.mag &
 ```
 
-<img width="1127" height="788" alt="image" src="https://github.com/user-attachments/assets/cf85453e-787a-44ef-ae6e-12725e028a03" />
+<img width="1920" height="923" alt="w6-inv" src="https://github.com/user-attachments/assets/8174055b-50cf-4317-9e69-cfda8fc82c18" />
 
 
 16 mask CMOS fabrication process  
@@ -1119,8 +1134,10 @@ https://www.vlsisystemdesign.com/wp-content/uploads/2017/07/16-mask-process.pdf
   - Press **`z`** for *Zoom*
 - In **`tkcon`**, type the `what` command to view the **mask layers**.
 
+<img width="1920" height="923" alt="w6-magic1" src="https://github.com/user-attachments/assets/34fb64f7-90ba-463a-abf2-66bf51f05dd8" />
 
-<img width="1812" height="822" alt="image" src="https://github.com/user-attachments/assets/817b659e-62ff-4b95-9c05-c851555c9ef6" />
+<img width="1920" height="923" alt="w6-magic2" src="https://github.com/user-attachments/assets/f503983a-f685-4833-a99a-8bf572d1d3c1" />
+
 
 
 - We need to **extract the parasitics** and **characterize the design**.  
@@ -1132,7 +1149,7 @@ https://www.vlsisystemdesign.com/wp-content/uploads/2017/07/16-mask-process.pdf
   ext2spice
 ```
 
-<img width="992" height="333" alt="image" src="https://github.com/user-attachments/assets/27d8cec4-52e3-48d9-bdba-a09a935c1179" />
+<img width="1920" height="923" alt="w6d3" src="https://github.com/user-attachments/assets/1720f68d-6ca4-458c-8eb5-93b5eb265735" />
 
 
 ### Modifying the SPICE File for Transient Response
@@ -1223,7 +1240,8 @@ After saving the changes, run the simulation using:
 ```bash
 ngspice sky130A_inv.spice
 ```
-<img width="1856" height="676" alt="image" src="https://github.com/user-attachments/assets/f54ad3aa-ac29-4132-a158-2b3d7775dd03" />
+
+<img width="1920" height="920" alt="w6d33" src="https://github.com/user-attachments/assets/30a0723f-76e5-40ef-840d-6891ceda8836" />
 
 
 plot the transient response with:
@@ -1231,7 +1249,8 @@ plot the transient response with:
 plot y vs time a
 ```
 
-<img width="1845" height="968" alt="image" src="https://github.com/user-attachments/assets/78df1369-70b6-4378-ac0f-6950d5e74337" />
+<img width="1920" height="920" alt="w6d34" src="https://github.com/user-attachments/assets/b7ff7116-3c4c-45c6-bc80-4bf07725c945" />
+
 
 
 - In the transient response **graph**, we can observe **spikes** due to a **small load capacitance (Cload)**.  
@@ -1242,8 +1261,10 @@ Modify the capacitor line in the SPICE file as follows:
 ```spice
 C3 Y VGND 2fF
 ```
+then plot y vs time a again:
 
-<img width="1773" height="977" alt="image" src="https://github.com/user-attachments/assets/53ce66c7-d5e2-4095-8626-1616189670f0" />
+<img width="1920" height="920" alt="w6d35" src="https://github.com/user-attachments/assets/f2122b1e-a27b-4766-b31e-b8e3be2150ac" />
+
 
 > The output spikes are slightly reduced compared to the previous result, leading to a smoother transient response.
 
@@ -1308,7 +1329,8 @@ To download and extract the DRC test files for Sky130 PDK:
 wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
 tar -xvzf drc_tests.tgz
 ```
-<img width="1857" height="636" alt="image" src="https://github.com/user-attachments/assets/17e2d8f2-b7d9-49bf-85ab-03afadd52fcd" />
+<img width="1920" height="920" alt="w6d36" src="https://github.com/user-attachments/assets/7c146117-39a2-4b98-9d42-ea938fc88490" />
+
 
 > These files contain the design rules used for the Sky130 PDK.
 
@@ -1320,7 +1342,8 @@ magic -d XR &
 
 1.  When you open the met3.mag layout file, you may observe various DRC (Design Rule Check) violations.
 
-<img width="1833" height="1016" alt="image" src="https://github.com/user-attachments/assets/a648e64a-c544-434f-a664-edad0f47f4cf" />
+<img width="1920" height="920" alt="w6d37" src="https://github.com/user-attachments/assets/196068ab-3493-480c-9d69-69c18a921bd4" />
+
 
 ### Metal Layer DRC Violations
 
