@@ -2214,9 +2214,6 @@ Screenshots of commands run and timing report generated
 ![Screenshot from 2024-03-26 23-17-32](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7d809f14-66b6-4dd6-8161-2ad8371cfaf9)
 ![Screenshot from 2024-03-26 23-17-56](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/64ccb1d8-74aa-42b0-88d4-a0f9588d2ca2)
 
-## NOTE
-
-i was unable to do some part of week-4 and week-5 on my own as there was an issue in my laptop and it took me 3 days to get it fixed, so if possible please excuse this🙏
 
 # Acknowledgements
 
