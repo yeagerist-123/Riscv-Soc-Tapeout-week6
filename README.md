@@ -2216,7 +2216,7 @@ Screenshots of commands run and timing report generated
 
 ## NOTE
 
-i was unable to some part of week-4 and week-5 on my own as there was a issue in my laptop and it took me 3 days to get it fixed, so if possible please excuse this🙏
+i was unable to do some part of week-4 and week-5 on my own as there was an issue in my laptop and it took me 3 days to get it fixed, so if possible please excuse this🙏
 
 # Acknowledgements
 
