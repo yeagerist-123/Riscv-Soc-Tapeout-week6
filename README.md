@@ -1384,17 +1384,6 @@ magic -d XR &
    prep -design picorv32a -tag
  
  ```
- * In these directory `/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/` we can find tracks
- ```
- ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ cd ../../pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/
- 
- ```
- * tpye command ` less tracks.info`
- ```
- less tracks.info
- 
- ```
- <img width="956" alt="4 1" src="https://user-images.githubusercontent.com/64173714/215493780-f81c412d-a0eb-49a8-b4a7-ce6e5fd2cd34.png">
  
  * open the layout from vsdstdcelldesign directory
  
@@ -1500,9 +1489,6 @@ echo $::env(SYNTH_DRIVING_CELL)
 run_synthesis
 ```
 
-Screenshot of merged.lef in `tmp` directory with our custom inverter as macro
-
-![Screenshot from 2024-03-24 23-46-25](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/55de3fc6-498d-4456-8e79-ae6e175d2ca6)
 
 Screenshots of commands run
 <img width="1920" height="923" alt="w6d48" src="https://github.com/user-attachments/assets/c4f8089a-3317-4ce5-af7e-934e1a16e6c3" />
